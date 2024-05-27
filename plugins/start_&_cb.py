@@ -33,14 +33,14 @@ upgrade_button = InlineKeyboardMarkup([[
         InlineKeyboardButton('buy premium ✓', user_id=int(6705898491)),
          ],[
         InlineKeyboardButton("Bᴀᴄᴋ", callback_data = "start")
-]])
+         ]])
 
 upgrade_trial_button = InlineKeyboardMarkup([[        
         InlineKeyboardButton('buy premium ✓', user_id=int(6705898491)),
          ],[
         InlineKeyboardButton("ᴛʀɪᴀʟ - 𝟷𝟸 ʜᴏᴜʀs ✓", callback_data = "give_trial"),
         InlineKeyboardButton("Bᴀᴄᴋ", callback_data = "start")
-]])
+         ]])
 
 start_button = InlineKeyboardMarkup([[        
         InlineKeyboardButton('Uᴩᴅᴀ𝚃ᴇꜱ', url='https://t.me/Digital_Botz'),
