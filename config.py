@@ -61,27 +61,27 @@ Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : @Digital_Botz 💞</b>"""
 """
 
     UPGRADE = """
-𝖢𝗁𝖾𝖼𝗄  𝗉𝗅𝖺𝗇  𝖽𝖾𝗍𝖺𝗂𝗅𝗌  𝗁𝖾𝗋𝖾
+𝖢𝗁𝖾𝖼𝗄  𝗉𝗅𝖺𝗇  𝖽𝖾𝗍𝖺𝗂𝗅𝗌  𝗁𝖾𝗋𝖾👇🏻
 
-**sᴛᴀʀᴛᴇʀ  ᴛʀɪᴀʟ**         →            **ᴘʀɪᴄᴇ** ↓
+**sᴛᴀʀᴛᴇʀ  🎓ᴛʀɪᴀʟ**         →            **ᴘʀɪᴄᴇ** ↓
 validity - 1 days                                0️⃣₹ ( free )
 limited features
 
 
-**ᴘʀᴇᴍɪᴜᴍ  ʟɪᴛᴇ**        →              **ᴘʀɪᴄᴇ** ↓
+**ᴘʀᴇᴍɪᴜᴍ  👒ʟɪᴛᴇ**        →              **ᴘʀɪᴄᴇ** ↓
 4gb file support - no                        15 days = 1️⃣9️⃣₹
 Upload limit - 20file / day                1 month = 3️⃣5️⃣₹
 Multiple process - yes.                                 
 
 
-**ᴘʀᴇᴍɪᴜᴍ   ᴘʟᴜs**      →             **ᴘʀɪᴄᴇ** ↓
+**ᴘʀᴇᴍɪᴜᴍ  👑ᴘʟᴜs**       →             **ᴘʀɪᴄᴇ** ↓
 4gb file support - yes                      15 days = 4️⃣5️⃣₹
 Upload limit - unlimited                    1 month = 7️⃣5️⃣₹
 Multiple process - yes
 Time gap - no 
 video optimize - yes 
 
-𝖻𝗎𝗒  𝖺𝗇𝗒  𝗉𝗅𝖺𝗇  𝗐𝗂𝗍𝗁  6️⃣ 𝗆𝗈𝗇𝗍𝗁  𝗏𝖺𝗅𝗂𝖽𝗂𝗍𝗒  𝖺𝗇𝖽  𝗀𝖾𝗍  2️⃣ 𝗆𝗈𝗇𝗍𝗁  𝖿𝗋𝖾𝖾.
+𝖻𝗎𝗒🛍️  𝖺𝗇𝗒  𝗉𝗅𝖺𝗇  𝗐𝗂𝗍𝗁  6️⃣ 𝗆𝗈𝗇𝗍𝗁  𝗏𝖺𝗅𝗂𝖽𝗂𝗍𝗒  𝖺𝗇𝖽  𝗀𝖾𝗍  2️⃣ 𝗆𝗈𝗇𝗍𝗁  🎉𝖿𝗋𝖾𝖾.
 """
     
     THUMBNAIL = """
