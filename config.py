@@ -22,7 +22,7 @@ class Config(object):
     DB_URL = os.environ.get("DB_URL","")
  
     # other configs
-    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/b746aadfe59959eb76f59.jpg")
+    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/a36f356bf1f2dc812bb2e.png")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7167553626').split()]
     FORCE_SUB = os.environ.get("FORCE_SUB", "Digital_Botz") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002022158846"))
