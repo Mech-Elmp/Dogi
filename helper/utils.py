@@ -1,10 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Special Thanks To (https://github.com/JayMahakal98) & @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
 
 import math, time, re
 from datetime import datetime
@@ -18,7 +11,6 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
     if round(diff % 5.00) == 0 or current == total:        
         percentage = current * 100 / total
         speed = current / diff
-        displayed_speed = speed + 10  # Increase the displayed speed by 2 units
         elapsed_time = round(diff) * 1000
         time_to_completion = round((total - current) / speed) * 1000
         estimated_total_time = elapsed_time + time_to_completion
@@ -27,14 +19,14 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "{0}{1}".format(
-            ''.join(["▣" for i in range(math.floor(percentage / 5))]),
-            ''.join(["▢" for i in range(20 - math.floor(percentage / 5))])
+            ''.join(["▬" for i in range(math.floor(percentage / 5))]),
+            ''.join(["▱" for i in range(15 - math.floor(percentage / 5))])
         )            
         tmp = progress + rkn.RKN_PROGRESS.format( 
             round(percentage, 2),
             humanbytes(current),
             humanbytes(total),
-            humanbytes(displayed_speed),  # Use the increased speed for display            
+            humanbytes(speed),            
             estimated_total_time if estimated_total_time != '' else "0 s"
         )
         try:
@@ -55,6 +47,7 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'ʙ'
+
 
 def TimeFormatter(milliseconds: int) -> str:
     seconds, milliseconds = divmod(int(milliseconds), 1000)
@@ -132,11 +125,3 @@ def add_prefix_suffix(input_string, prefix='', suffix=''):
             return f"{prefix} {filename} {suffix}{extension}"
     else:
         return input_string
-
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Special Thanks To @ReshamOwner
-# Update Channel @Digital_Botz & @DigitalBotz_Support
