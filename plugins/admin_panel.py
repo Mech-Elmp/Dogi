@@ -1,8 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
 
 from config import Config
 from helper.database import db
@@ -24,7 +19,7 @@ async def get_stats(bot, message):
     rkn = await message.reply('**ᴘʀᴏᴄᴇssɪɴɢ.....**')    
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
-    await rkn.edit(text=f"**--Bᴏᴛ Sᴛᴀᴛᴜꜱ--** \n\n**⌚️ Bᴏᴛ Uᴩᴛɪᴍᴇ:** {uptime} \n**🐌 Cᴜʀʀᴇɴᴛ Pɪɴɢ:** `{time_taken_s:.3f} ᴍꜱ` \n**👭 Tᴏᴛᴀʟ Uꜱᴇʀꜱ:** `{total_users}`\n**💸 ᴛᴏᴛᴀʟ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀs:** `{total_premium_users}`")
+    await rkn.edit(text=f"**ʙᴏᴛ sᴛᴀᴛᴜꜱ** \n\n**⌚️ ʙᴏᴛ ᴜᴩᴛɪᴍᴇ:** {uptime} \n**🐌ᴄᴜʀʀᴇɴᴛ ᴘɪɴɢ:** `{time_taken_s:.3f} ᴍꜱ` \n**ᴛᴏᴛᴀʟ ᴜsᴇʀꜱ:** `{total_users}`\n**💸ᴛᴏᴛᴀʟ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀs:** `{total_premium_users}`")
 
 #bot logs process 
 @Client.on_message(filters.command('logs') & filters.user(Config.ADMIN))
@@ -50,10 +45,10 @@ async def add_premium(client, message):
             data = await db.get_user(user_id)
             expiry = data.get("expiry_time")   
             expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ : %I:%M:%S %p")         
-            await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ✅\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True)
+            await message.reply_text(f"**ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ**\n\n**ᴜꜱᴇʀ** : {user.mention}\n**ᴜꜱᴇʀ ɪᴅ** : <code>{user_id}</code>\n**ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ** : <code>{time}</code>\n\n**ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ** : {current_time}\n\n**ᴇxᴘɪʀʏ ᴅᴀᴛᴇ** : {expiry_str_in_ist}", disable_web_page_preview=True)
             await client.send_message(
                 chat_id=user_id,
-                text=f"👋 ʜᴇʏ {user.mention},\nᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴘᴜʀᴄʜᴀꜱɪɴɢ ᴘʀᴇᴍɪᴜᴍ.\nᴇɴᴊᴏʏ !! ✨🎉\n\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True              
+                text=f"**👋 ʜᴇʏ {user.mention}, ʏᴏᴜ  ᴀʀᴇ  ᴜᴘɢʀᴀᴅᴇᴅ  ᴛᴏ  ᴘʀᴇᴍɪᴜᴍ  ᴇɴᴊᴏʏ** !!🎉\n\n**🎟️ʀᴇᴍᴀɪɴɪɴɢ  ᴅᴀʏs** : <code>{time}</code>\n⛳ᴊᴏɪɴɪɴɢ  ᴅᴀᴛᴇ : {current_time}\n\n**🤿ᴇxᴘɪʀʏ  ᴅᴀᴛᴇ** : {expiry_str_in_ist}", disable_web_page_preview=True              
             )    
            # await client.send_message(PREMIUM_LOGS, text=f"#Added_Premium\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True)
             return
@@ -72,7 +67,7 @@ async def remove_premium(bot, message):
             await message.reply_text(f"ᴜsᴇʀ {user.mention}, ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ.")
             await bot.send_message(
                 chat_id=user_id,
-                text=f"<b>ʜᴇʏ {user.mention},\n\n✨ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ᴛᴏ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ\n\nᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan</b>"
+                text=f"**ʜᴇʏ {user.mention}, ʏᴏᴜʀ  ᴀᴄᴄᴏᴜɴᴛ  ʜᴀs  sᴜsᴘᴇɴᴅᴇᴅ  ғʀᴏᴍ  ᴏᴜʀ  ᴘʀᴇᴍɪᴜᴍ  ᴘʟᴀɴ , ᴄᴏɴᴛᴀᴄᴛ  ᴀᴅᴍɪɴ  ғᴏʀ  ᴍᴏʀᴇ  ɪɴғᴏ**\n\n**ᴄʜᴇᴄᴋ  ʏᴏᴜʀ  ᴘʟᴀɴ  ᴅᴇᴛᴀɪʟs  ʙʏ  ᴄᴏᴍᴍᴀɴᴅɪɴɢ 👉🏻 /myplan**"
             )
         else:
             await message.reply_text("ᴜɴᴀʙʟᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ !\nᴀʀᴇ ʏᴏᴜ ꜱᴜʀᴇ, ɪᴛ ᴡᴀꜱ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ɪᴅ ?")
@@ -83,7 +78,7 @@ async def remove_premium(bot, message):
 #Restart to cancell all process 
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
 async def restart_bot(b, m):
-    rkn = await b.send_message(text="**🔄 ᴘʀᴏᴄᴇssᴇs sᴛᴏᴘᴘᴇᴅ. ʙᴏᴛ ɪs ʀᴇsᴛᴀʀᴛɪɴɢ.....**", chat_id=m.chat.id)
+    rkn = await b.send_message(text="**ᴘʀᴏᴄᴇssᴇs sᴛᴏᴘᴘᴇᴅ. ʙᴏᴛ ɢᴏɪɴɢ  ᴛᴏ  ʙᴇ  ʀᴇʙᴏᴏᴛ.....**", chat_id=m.chat.id)
     failed = 0
     success = 0
     deactivated = 0
