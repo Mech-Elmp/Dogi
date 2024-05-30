@@ -21,12 +21,12 @@ async def not_subscribed(_, client, message):
 
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def forces_sub(client, message):
-    buttons = [[InlineKeyboardButton(text="📢 Join Update Channel 📢", url=f"https://t.me/{Config.FORCE_SUB}") ]]
-    text = "**Sᴏʀʀy Dᴜᴅᴇ Yᴏᴜ'ʀᴇ Nᴏᴛ Jᴏɪɴᴇᴅ My Cʜᴀɴɴᴇʟ 😐. Sᴏ Pʟᴇᴀꜱᴇ Jᴏɪɴ Oᴜʀ Uᴩᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Cᴄᴏɴᴛɪɴᴜᴇ**"
+    buttons = [[InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ  ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{Config.FORCE_SUB}") ]]
+    text = "**ʙᴏᴛ  ɪs  ᴀᴄᴛɪᴠᴇ  ʙᴜᴛ  ᴏɴʟʏ  ᴏᴜʀ  ᴄʜᴀɴɴᴇʟ  ᴍᴇᴍʙᴇʀs  ᴄᴀɴ  ᴜsᴇ  ᴛʜɪs  ʙᴏᴛ \n\nᴄʟɪᴄᴋ  ʙᴇʟᴏᴡ  ᴊᴏɪɴ  ᴀɴᴅ  sᴇɴᴅ  ғɪʟᴇ  ᴀɢᴀɪɴ**"
     try:
         user = await client.get_chat_member(Config.FORCE_SUB, message.from_user.id)    
         if user.status == enums.ChatMemberStatus.BANNED:                                   
-            return await client.send_message(message.from_user.id, text="Sᴏʀʀy Yᴏᴜ'ʀᴇ Bᴀɴɴᴇᴅ Tᴏ Uꜱᴇ Mᴇ")  
+            return await client.send_message(message.from_user.id, text="**ʏᴏᴜ  ᴀʀᴇ  ʙᴀɴɴᴇᴅ  ᴛᴏ  ᴜsᴇ  ᴍᴇ**")  
         elif user.status == enums.ChatMemberStatus.LEFT:
             return await message.reply_text(text=text, reply_markup=InlineKeyboardMarkup(buttons))
     except UserNotParticipant:                       
@@ -34,9 +34,4 @@ async def forces_sub(client, message):
     return await message.reply_text(text=text, reply_markup=InlineKeyboardMarkup(buttons))
           
 
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Update Channel @Digital_Botz & @DigitalBotz_Support
+
