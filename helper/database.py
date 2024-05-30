@@ -1,10 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Special Thanks To (https://github.com/JayMahakal98)
-# Update Channel @Digital_Botz & @DigitalBotz_Support
 
 import motor.motor_asyncio, datetime
 from config import Config
@@ -145,8 +138,3 @@ class Database:
         
 db = Database(Config.DB_URL, Config.DB_NAME)
 
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Update Channel @Digital_Botz & @DigitalBotz_Support
